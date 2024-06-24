@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My survey</title>
+    <link rel="stylesheet" href="styles-1.css">
+  </head>
+  <body>
+    <h1 id="title">My Freecodecamp survey</h1>
+    <p id="description"> 
+      Please Fill in this user form to help us improve the platform 
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">
+          Name:<input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label id="number-label">
+          Age:<input type="number" id="number" min="18" max="120" placeholder="Enter your age">
+        </label>
+        <label id="email-label">
+          Email:<input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label id="name-label">Which option best describes your personality?
+          <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">Music</option>
+            <option value="2">Games</option>
+            <option value="3">Tv Series</option>
+            <option value="4">Prefer Not To Say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>
+          Would you recommend freeCodeCamp to a friend?
+        </p>
+       <label>
+         <input type="radio" name="definately-type" class="inline" value="Yes">Definitely Yes
+       </label>
+       <label>
+         <input type="radio" name="definately-type" class="inline" value="Might">Definately Might
+       </label>
+       <label><input type="radio" name="definately-type" class="inline" value="No">Definately Not
+       </label>
+      </fieldset>
+       <p>
+         What would you think needs to be improve in freecodecamp? 
+       </p>
+       <label>
+         <input type="checkbox" value="Front" class="inline"> Front-end Projects 
+       </label>
+       <label>
+         <input type="checkbox" value="Back" class="inline"> Back-end Projects 
+       </label>
+       <label>
+         <input type="checkbox" value="Visual" class="inline"> Data Visualization 
+       </label>
+       <label>
+         <input type="checkbox" value="Challenges" class="inline"> Challenges
+       </label>
+      <fieldset>
+        <p>Any comments or suggestions?</p>
+        <textarea rows="4" cols="50">
+        </textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
